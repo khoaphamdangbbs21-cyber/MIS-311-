@@ -4,7 +4,7 @@ Cost of Living Analysis
 
 ## Data Overview
 
-This project analyzes the *Cost of Living* dataset provided for MIS 311. The original dataset contains 201 observations and five variables covering 2000–2023.
+This project analyzes the *Cost of Living* dataset provided for MIS 311. The original dataset contains 201 observations and five variables covering 2000–2023. The analysis compares reported living costs across regions and examines their relationship with average monthly income.
 
 | Variable | Description |
 |---|---|
@@ -14,15 +14,13 @@ This project analyzes the *Cost of Living* dataset provided for MIS 311. The ori
 | `Cost_of_Living` | Reported cost of living |
 | `Region` | Geographic region |
 
-The analysis compares reported living costs across regions and examines the relationship between monthly income and living costs.
-
 ## Data Cleaning
 
 | Issue | Action |
 |---|---|
-| Two missing `Region` values | Both records were for Mexico. The missing values were filled with `North America`, consistent with the other Mexico records. |
-| Two missing `Average_Monthly_Income` values | The cells were left blank. These records were included in the cost-of-living analysis and excluded from calculations that required income. |
-| Two exact duplicate rows | Duplicates were identified by comparing all five columns and removed, leaving 199 records. |
+| Two missing `Region` values | Both records were for Mexico. The missing values were filled with `North America` based on the other Mexico records. |
+| Two missing `Average_Monthly_Income` values | The cells were left blank. These rows were included in the cost-of-living analysis and excluded from calculations that required income. |
+| Two exact duplicate rows | All five columns were compared to identify exact duplicates. Removing two duplicate rows left 199 records. |
 
 ## Descriptive Statistics
 
@@ -38,7 +36,7 @@ The analysis compares reported living costs across regions and examines the rela
 
 ### Average Cost of Living by Region
 
-![Horizontal bar chart comparing average cost of living across six regions](cost-by-region.png)
+![Average cost of living by region](Average%20Cost%20of%20Living%20by%20Region.png)
 
 | Region | Observations | Average Cost of Living |
 |---|---:|---:|
@@ -51,19 +49,19 @@ The analysis compares reported living costs across regions and examines the rela
 
 ### Average Monthly Income vs. Cost of Living
 
-![Scatter plot with average monthly income on the horizontal axis and cost of living on the vertical axis](income-vs-cost.png)
+![Scatter plot of average monthly income and cost of living](Monthly%20Income%20vs%20%20Cost%20of%20Living.png)
 
-The Pearson correlation was **r = −0.0263**, based on the **197 observations** with both income and cost-of-living values.
+The scatter plot uses 197 observations with both income and cost-of-living values. The Pearson correlation coefficient is **r = −0.0263**.
 
 ## Key Insights
 
-1. **Average living costs varied across regions in the dataset.** Africa had the highest reported average (3,963.17), while Europe had the lowest (3,554.35), a difference of 408.82. Since these averages cover multiple years and are based on different numbers of observations, businesses can use them to identify where to check more recent, country-level cost data before setting budgets.
+1. **Africa had the highest average cost of living in the dataset.** Its average was 3,963.17, which was 408.82 higher than Europe's average of 3,554.35, the lowest among the six regions. Because the regional averages combine observations from multiple years, businesses can use the comparison to identify where to check more recent, country-level costs before setting budgets.
 
-2. **Monthly income showed little linear relationship with living costs.** The Pearson correlation was −0.0263 across 197 complete observations, indicating that higher reported income did not consistently go with higher or lower living costs in this sample. Businesses comparing potential markets should examine local incomes and living costs together when assessing customer purchasing power.
+2. **Average monthly income and cost of living showed little linear association.** The Pearson correlation was −0.0263 across 197 observations, so income alone provided little information about how living costs varied in this sample. Businesses comparing markets can examine both measures when assessing local purchasing power.
 
 ## Files
 
-[Download the Excel analysis](Cost-of-Living-Analysis.xlsx)
+[Open the Excel analysis](Cost%20of%20Living%20Analysis.xlsx.xlsx)
 
 ## References
 
