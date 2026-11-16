@@ -49,7 +49,7 @@ This project analyzes the *Cost of Living* dataset provided for MIS 311. The ori
 
 ### Average Monthly Income vs. Cost of Living
 
-![Scatter plot of average monthly income and cost of living](Monthly%20Income%20vs%20%20Cost%20of%20Living.png)
+![Monthly income vs. cost of living](./Monthly%20Income%20Cost%20of%20Living.png)
 
 The scatter plot uses 197 observations with both income and cost-of-living values. The Pearson correlation coefficient is **r = −0.0263**.
 
@@ -61,7 +61,7 @@ The scatter plot uses 197 observations with both income and cost-of-living value
 
 ## Files
 
-[Open the Excel analysis](Cost%20of%20Living%20Analysis.xlsx.xlsx)
+[Open the Excel analysis](./Cost%20of%20Living%20Analysis.xlsx)
 
 ## References
 
